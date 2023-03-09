@@ -42,7 +42,7 @@ const GoalForm = (props) => {
     return (
       <>
         <h1>My Goals</h1>
-        <form onSubmit={submitForm}>
+        <form >
           <input 
             type="text" 
             name='goal' 
@@ -57,7 +57,7 @@ const GoalForm = (props) => {
             onChange={input2Handler}
             value={formData.by}
           />
-          <button >Add</button>
+          <button onClick={submitForm} >Add</button>
         </form>
       </>
     )

@@ -11,7 +11,7 @@ const ListOfGoals = (props) => {
   }
     return (
       <ul>
-      {props.sendList>0 ? displayList(props.sendList) : null}
+      {props.sendList.length > 0 ? displayList(props.sendList) : null}
       </ul>
     );
 }
